@@ -19,7 +19,7 @@
     <script id="recipes-template" type="text/x-handlebars-template">
             {{#each realData}}
                 <div id= "recipe" > <a href="{{href}}"> {{title}} </a> 
-                <img src= {{thumbnail}}>
+                <img id="image"src= {{thumbnail}} onclick="myfunction()">
                 <p >Ingredients : </p>
                     <ul id= "ingred"> 
                     {{#each ingredients}}

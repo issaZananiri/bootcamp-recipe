@@ -3,8 +3,8 @@ const server = express()
 const request = require('request')
 const path = require('path')
 const port = 8080
-server.use(express.static(path.join(__dirname,`../dist`)))
-server.use(express.static(path.join(__dirname,`../node_modules`)))
+server.use(express.static(path.join(__dirname,`dist`)))
+server.use(express.static(path.join(__dirname,`node_modules`)))
 server.get('/sanity', (req, res) => res.send("OK"))
 server.get('/', (req, res) => res.send("OK"))
 server.get('/recipes/:ingredient', (req, res) => {

@@ -7,3 +7,5 @@ const fetchRecipe = function(){
         render.renderRecipes(realData)
     })
 }
+const myfunction= function(){
+    alert((this).ingredients[0])}
